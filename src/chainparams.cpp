@@ -774,7 +774,7 @@ public:
         };
 
         chainTxData = ChainTxData{
-            0,
+            1576893533,
             0,
             0
         };
