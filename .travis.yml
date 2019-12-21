@@ -1,0 +1,145 @@
+# errata:
+# - sudo/dist/group are set so as to get Blue Box VMs, necessary for [loopback]
+#   IPv6 support
+
+sudo: required
+dist: trusty
+
+os: linux
+language: minimal
+
+services:
+  - docker
+
+cache:
+  ccache: true
+  directories:
+    - $HOME/cache
+
+env:
+  global:
+    - secure: "nhIbqXTJt1cz8t3FMnKK2IWQcCHwHWnMpoBvSB4DuOQA2MsL0PXPtV7rtqP3/eEEc3RyPovacD1lFgTJc0f3hWJmMwMV+g1ax/7ffI8KYBu68kDpn3GcIq7GX8ZZPDFB1m7Mz3jly5PanfIPhCum5jDNMsu7D2CJt/NfWywAYH1x/JNlv5MxFnlZvRaOxTiPx0aiRG1Tr7ZzbVV7LmdiJy+Z1Es6Wn+KExi1LVEx0i3T6Zhax56OFSTfAlge30y10Mx2+IJYCzUA0D8nvUZqOJFy3L1WoNg0AaimaCTelIKbJt/dso4nMxyCIHWp7vND/T5CgN5c1yuQP+cQyMqr6XRXKkBNe1+PhJUHZn0tmu3PLWGZYn0VjmDelJu/GKF2WG+XflkHDdLEFvGEGlA0P8w+u12Ds4HsLVeG+2TJZk7P53pFhmQ73x+uPa0EQhL63Q7ZloLkBCGpoBvLGi+PGikYYwPDstEsNssRtFdlbMqL1DOHFKajFeltTPvzDIGpFkFGL0fUoICxc2pCp7yvEgsAOpy56nlWOiSr8mK9ZXRgrnMWmufvw0cBfGzebNiiYg1vIAy9V8h4sbiQFtRnNUQyVJt/4N+eKraD7Jd9U/OHkYC7oCFB7DVrpSjRHFDTHMNl9SwIGityg0RF1EsEQMqJykWy9d5R7nqK6hD1Pjw="
+    - secure: "xdeQldckRR0Rp+GJr5BV0NRFaR0dGX4469LqAXP8Gn+01ZXtsVuwsereN177nbtRtGcCZYRukrVe9LWvksgWFoHfKuSv82J8TxFRIkXeXbAN1vLJpgQ+MI+iGOt940aiuy8P3eubbHAhqk9kCa9CuQMxtierG7DwgH2ri1zal5Q3x3wQtp0zvq8l36uAma0sGBK9Vz/N+Y+rYc/hAMKUMN8iZ0lt87Vili9hZmpnO7FJ2kkCcD3A24TrD9xnspWxbGO7F6rfWvc6RzbB9X6xQtuzoor7DHPlih93mNmBHjfv5KOwzc8oHY7ry2/54/yGXX9IvANgY3iW24YnyVBCVWaCpRfBG/cgBFbxjfcmaOK2nZHFuaPfpDYc346thQcwu3srPeDJjBaCXaYprrPZWnvaP0OpUcY4M+rxcNcAUY1BmDTa7Fdc1RwbBWJSsdc6qL2XxMR9cZreOYBNN+BWTcZDnnlZ+3zkGcR+P4WUYTvODdqNNj+mm+VwcYxoZzQvtOFyAtsgcEa+47UqFuhczMhU5CocX1fRMdjO0RWWG3A3CenPOMifvyPDSaHe+oPGTpxJTpXw3V5Ceu0gwkSTmMkAx1ZT1qhf7jxcfl9rieCNqF8iQHXOjkiI2mjpI2cK2Ld5IR6V3FNZ2/2MHTs1uGHwVYVoDMUbFCwP2Tcbbes="
+    - DOCKER_BUILD=false
+
+stages:
+  - build depends
+  - build src
+  - run tests
+  - build docker
+
+builddepends: &builddepends
+  stage: build depends
+  script:
+    - $DOCKER_RUN_IN_BUILDER ./ci/build_depends.sh
+
+buildsrc: &buildsrc
+  stage: build src
+  script:
+    - $DOCKER_RUN_IN_BUILDER ./ci/build_depends.sh
+    - $DOCKER_RUN_IN_BUILDER ./ci/build_src.sh
+
+runtests: &runtests
+  stage: run tests
+  script:
+    - $DOCKER_RUN_IN_BUILDER ./ci/build_depends.sh
+    - $DOCKER_RUN_IN_BUILDER ./ci/build_src.sh
+    - $DOCKER_RUN_IN_BUILDER ./ci/test_unittests.sh
+    - if [ "$TRAVIS_EVENT_TYPE" = "cron" ]; then extended="--extended --exclude pruning,dbcrash"; fi
+    - $DOCKER_RUN_IN_BUILDER ./ci/test_integrationtests.sh --jobs=3 ${extended}
+
+builddocker: &builddocker
+  stage: build docker
+  script:
+    # no need to run tests again here
+    - if [ "$DOCKER_BUILD" = "true" ]; then $DOCKER_RUN_IN_BUILDER ./ci/build_depends.sh && $DOCKER_RUN_IN_BUILDER ./ci/build_src.sh && BUILD_DIR=build-ci/coinlobbycore-$BUILD_TARGET ./docker/build-docker.sh; fi
+
+jobs:
+  include:
+    # build depends
+    - <<: *builddepends
+      env: BUILD_TARGET=arm-linux
+    - <<: *builddepends
+      env: BUILD_TARGET=win32
+    - <<: *builddepends
+      env: BUILD_TARGET=win64
+    - <<: *builddepends
+      env: BUILD_TARGET=linux32
+    - <<: *builddepends
+      env: BUILD_TARGET=linux64
+    - <<: *builddepends
+      env: BUILD_TARGET=linux64_nowallet
+    - <<: *builddepends
+      env: BUILD_TARGET=linux64_release DOCKER_BUILD=true
+    - <<: *builddepends
+      env: BUILD_TARGET=mac
+    # build source
+    - <<: *buildsrc
+      env: BUILD_TARGET=arm-linux
+    - <<: *buildsrc
+      env: BUILD_TARGET=win32
+    - <<: *buildsrc
+      env: BUILD_TARGET=win64
+    - <<: *buildsrc
+      env: BUILD_TARGET=linux32
+    - <<: *buildsrc
+      env: BUILD_TARGET=linux64
+    - <<: *buildsrc
+      env: BUILD_TARGET=linux64_nowallet
+    - <<: *buildsrc
+      env: BUILD_TARGET=linux64_release DOCKER_BUILD=true
+    - <<: *buildsrc
+      env: BUILD_TARGET=mac
+    # run tests (no tests for arm-linux and mac)
+    - <<: *runtests
+      env: BUILD_TARGET=win32
+    - <<: *runtests
+      env: BUILD_TARGET=win64
+    - <<: *runtests
+      env: BUILD_TARGET=linux32
+    - <<: *runtests
+      env: BUILD_TARGET=linux64
+    - <<: *runtests
+      env: BUILD_TARGET=linux64_nowallet
+    - <<: *runtests
+      env: BUILD_TARGET=linux64_release DOCKER_BUILD=true
+    # build docker
+    - <<: *builddocker
+      env: BUILD_TARGET=linux64_release DOCKER_BUILD=true
+
+before_cache:
+  # Save builder image
+  - docker save coinlobby-builder-$BUILD_TARGET-$TRAVIS_JOB_NUMBER $(docker history -q coinlobby-builder-$BUILD_TARGET-$TRAVIS_JOB_NUMBER | grep -v \<missing\>) | gzip -2 > $HOME/cache/docker/coinlobby-builder-$BUILD_TARGET.tar.gz
+
+before_install:
+  - travis_retry travis_apt_get_update
+  - travis_retry sudo apt-get -yq --no-install-suggests --no-install-recommends install docker-ce realpath
+
+install:
+    # Our scripts try to be Travis agnostic
+    - export PULL_REQUEST="$TRAVIS_PULL_REQUEST"
+    - export COMMIT_RANGE="$TRAVIS_COMMIT_RANGE"
+    - export JOB_NUMBER="$TRAVIS_JOB_NUMBER"
+    - export HOST_SRC_DIR=$TRAVIS_BUILD_DIR
+    - export HOST_CACHE_DIR=$HOME/cache
+    - export TRAVIS_COMMIT_LOG=`git log --format=fuller -1`
+    - export PYTHON_DEBUG=1
+    - source ./ci/matrix.sh
+    - mkdir -p $HOST_CACHE_DIR/docker && mkdir -p $HOST_CACHE_DIR/ccache && mkdir -p $HOST_CACHE_DIR/depends && mkdir -p $HOST_CACHE_DIR/sdk-sources
+    # Keep this as it makes caching related debugging easier
+    - ls -lah $HOST_CACHE_DIR && ls -lah $HOST_CACHE_DIR/depends && ls -lah $HOST_CACHE_DIR/ccache && ls -lah $HOST_CACHE_DIR/docker
+    # Load cached builder image
+    - if [ -f $HOST_CACHE_DIR/docker/coinlobby-builder-$BUILD_TARGET.tar.gz ]; then zcat $HOST_CACHE_DIR/docker/coinlobby-builder-$BUILD_TARGET.tar.gz | docker load || true; fi
+    - travis_retry docker pull ubuntu:bionic
+    - travis_retry docker build -t $BUILDER_IMAGE_NAME --build-arg=USER_ID=$UID --build-arg=GROUP_ID=$UID --build-arg=BUILD_TARGET=$BUILD_TARGET -f ci/Dockerfile.builder ci
+before_script:
+    # Make sure stdout is in blocking mode. Otherwise builds will fail due to large writes to stdout
+    # See https://github.com/travis-ci/travis-ci/issues/4704. If this gets fixed, this line can also be removed.
+    - python3 -c 'import os,sys,fcntl; flags = fcntl.fcntl(sys.stdout, fcntl.F_GETFL); fcntl.fcntl(sys.stdout, fcntl.F_SETFL, flags&~os.O_NONBLOCK);'
+    # Build docker image only for development branch of the main repo
+    - if [ "$TRAVIS_REPO_SLUG" != "coinlobby/coinlobby" -o "$TRAVIS_BRANCH" != "development" -o "$TRAVIS_PULL_REQUEST" != "false" ]; then export DOCKER_BUILD="false"; echo DOCKER_BUILD=$DOCKER_BUILD; fi
+after_script:
+    - echo $TRAVIS_COMMIT_RANGE
+    - echo $TRAVIS_COMMIT_LOG
+after_success:
+    - if [ "$DOCKER_BUILD" = "true" ]; then docker login -u $DOCKER_HUB_USER -p $DOCKER_HUB_PASSWORD && ./docker/push-docker.sh; fi

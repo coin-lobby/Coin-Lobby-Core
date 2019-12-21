@@ -1,3 +1,5 @@
-# Coin-Lobby-Core
-Development of user friendly crypto currency.
-Expanding practical use through applications.
+<p align="center"><img src="https://github.com/CoinLobby/media/raw/master/coinlobby-logo256.png"/></p>
+
+`M`: [![Build Status](https://travis-ci.org/CoinLobby/coinlobby.svg?branch=master)](https://travis-ci.org/CoinLobby/coinlobby)
+
+`D`: [![Build Status](https://travis-ci.org/CoinLobby/coinlobby.svg?branch=development)](https://travis-ci.org/CoinLobby/coinlobby)

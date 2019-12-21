@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=CoinLobby Core
+Comment=CoinLobby P2P Cryptocurrency
+Comment[de]=Verbinde mit dem CoinLobby peer-to-peer Netzwerk
+Comment[fr]=CoinLobby, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=CoinLobby, eşten eşe kriptografik sanal para birimi
+Exec=coinlobby-qt %u
+Terminal=false
+Type=Application
+Icon=coinlobby128
+MimeType=x-scheme-handler/coinlobby;
+Categories=Office;Finance;

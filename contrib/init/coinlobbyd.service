@@ -1,0 +1,22 @@
+[Unit]
+Description=CoinLobby's distributed currency daemon
+After=network.target
+
+[Service]
+User=coinlobbycore
+Group=coinlobbycore
+
+Type=forking
+PIDFile=/var/lib/coinlobbyd/coinlobbyd.pid
+ExecStart=/usr/bin/coinlobbyd -daemon -pid=/var/lib/coinlobbyd/coinlobbyd.pid \
+-conf=/etc/coinlobbycore/coinlobby.conf -datadir=/var/lib/coinlobbyd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
