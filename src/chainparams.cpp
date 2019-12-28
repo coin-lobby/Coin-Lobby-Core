@@ -287,13 +287,13 @@ public:
         pchMessageStart[1] = 0xc5;
         pchMessageStart[2] = 0x6d;
         pchMessageStart[3] = 0x02;
-        vAlertPubKey = ParseHex("0");
+        vAlertPubKey = ParseHex("040187adbb62634b0ee146d2fb2f3737a8818faf6bd47e7162e464b6aadd17787be12d9155fdd041abdea538152f5ffcb4b1c406e32bae2411d2442c69fa986a0f");
         nDefaultPort = 7589;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1576896534, 716561, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1577414308, 110155, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x000001e10ee0c61725afcd1b6a4ed6b77bc371e182916f37d848b9a5ac4d5210"));
+        assert(consensus.hashGenesisBlock == uint256S("0x000007b7ee4df1e2005925ebf91a746942b61cb9a17f11a8e1c52eaccb4103ad"));
         assert(genesis.hashMerkleRoot == uint256S("0x44186b24a73dbfef8e0a7aae9678ff586d05dbb28897809e12f6a0a1ebc9c7d3"));
 
 
@@ -337,16 +337,16 @@ public:
         nMinSporkKeys = 1;
         fBIP9CheckMasternodesUpgraded = true;
 
-        // TEMP COMMENT OUTcheckpointData = (CCheckpointData) {
-        // TEMP COMMENT OUT    boost::assign::map_list_of
-        // TEMP COMMENT OUT    (     0, uint256S("0x000001e10ee0c61725afcd1b6a4ed6b77bc371e182916f37d848b9a5ac4d5210"))
-        // TEMP COMMENT OUT};
+        checkpointData = (CCheckpointData) {
+            boost::assign::map_list_of
+            (     0, uint256S("0x000007b7ee4df1e2005925ebf91a746942b61cb9a17f11a8e1c52eaccb4103ad"))
+        };
 
         checkpointData = (CCheckpointData) { { {}, }};
 
         chainTxData = ChainTxData{
-            1576896534, // * UNIX timestamp of last known number of transactions
-            1,    // * total number of transactions between genesis and that timestamp
+            1577414308, // * UNIX timestamp of last known number of transactions
+            0,    // * total number of transactions between genesis and that timestamp
                         //   (the tx=... number in the SetBestChain debug.log lines)
             1         // * estimated number of transactions per second after that timestamp
         };
@@ -442,13 +442,13 @@ public:
         pchMessageStart[1] = 0xf2;
         pchMessageStart[2] = 0xb6;
         pchMessageStart[3] = 0xa7;
-        vAlertPubKey = ParseHex("0");
+        vAlertPubKey = ParseHex("0460058ebd21b89804087b5802c381041a8e17b99543f88a8d24ccf55bc83cee462999865eb0b81f31c9a8dc72de1c6e7784dc3feea8ea32e5b2f31be7b39de6f1");
         nDefaultPort = 17589;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1576893612, 1838020, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1577414340, 707136, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("00000a0de5029b20a93eb56e6864ddcd3dffb95a11dc2a05191c764d050ead00"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000859c512aaa2fadfebe7aa08914ad1559ca2e176e44655303fb35c84f5f2"));
         assert(genesis.hashMerkleRoot == uint256S("0x44186b24a73dbfef8e0a7aae9678ff586d05dbb28897809e12f6a0a1ebc9c7d3"));
 
         vFixedSeeds.clear();
@@ -495,16 +495,16 @@ public:
         nMinSporkKeys = 1;
         fBIP9CheckMasternodesUpgraded = true;
 
-        // TEMP COMMENT OUT checkpointData = (CCheckpointData) {
-        // TEMP COMMENT OUT     boost::assign::map_list_of
-        // TEMP COMMENT OUT     (    0, uint256S("0x00000a0de5029b20a93eb56e6864ddcd3dffb95a11dc2a05191c764d050ead00"))
-        // TEMP COMMENT OUT };
+        checkpointData = (CCheckpointData) {
+             boost::assign::map_list_of
+             (    0, uint256S("0x00000859c512aaa2fadfebe7aa08914ad1559ca2e176e44655303fb35c84f5f2"))
+         };
 
         checkpointData = (CCheckpointData) { { {}, }};
 
         chainTxData = ChainTxData{
-            1576893612, // * UNIX timestamp of last known number of transactions
-            1,    // * total number of transactions between genesis and that timestamp
+            1577414340, // * UNIX timestamp of last known number of transactions
+            0,    // * total number of transactions between genesis and that timestamp
                         //   (the tx=... number in the SetBestChain debug.log lines)
             1        // * estimated number of transactions per second after that timestamp
         };
@@ -600,13 +600,13 @@ public:
         pchMessageStart[1] = 0xc1;
         pchMessageStart[2] = 0xf2;
         pchMessageStart[3] = 0xd6;
-        vAlertPubKey = ParseHex("0");
+        vAlertPubKey = ParseHex("04024efcd1627df33b9f5c6851750f025c3ec5a1f1fd9c95d88b403c068acf2ecdc505e06cff2fc4c0c26c049dc2bf5260d09cb8f9cd268439b6fcaf6489a4adcb");
         nDefaultPort = 17589;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1576893577, 1, 0x207fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1577415801, 3, 0x207fffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x7cdee06b50f675d674a480eed723936a88d7e723a4f0a28cb38674a4135617ba"));
+        assert(consensus.hashGenesisBlock == uint256S("0x1806ba27664a228ad562bf5791e63957ef4843cabdbfd71ae983b835931a0361"));
         assert(genesis.hashMerkleRoot == uint256S("0x44186b24a73dbfef8e0a7aae9678ff586d05dbb28897809e12f6a0a1ebc9c7d3"));
 
         devnetGenesis = FindDevNetGenesisBlock(consensus, genesis, 50 * COIN);
@@ -654,7 +654,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            (      0, uint256S("0x7cdee06b50f675d674a480eed723936a88d7e723a4f0a28cb38674a4135617ba"))
+            (      0, uint256S("0x1806ba27664a228ad562bf5791e63957ef4843cabdbfd71ae983b835931a0361"))
             (      1, devnetGenesis.GetHash())
         };
 
@@ -752,9 +752,9 @@ public:
         nDefaultPort = 19994;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1576893577, 1, 0x207fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1577415801, 3, 0x207fffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x7cdee06b50f675d674a480eed723936a88d7e723a4f0a28cb38674a4135617ba"));
+        assert(consensus.hashGenesisBlock == uint256S("0x1806ba27664a228ad562bf5791e63957ef4843cabdbfd71ae983b835931a0361"));
         assert(genesis.hashMerkleRoot == uint256S("0x44186b24a73dbfef8e0a7aae9678ff586d05dbb28897809e12f6a0a1ebc9c7d3"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
@@ -775,16 +775,16 @@ public:
         // regtest usually has no masternodes in most tests, so don't check for upgraged MNs
         fBIP9CheckMasternodesUpgraded = false;
 
-        // TEMP COMMENT OUTcheckpointData = (CCheckpointData){
-        // TEMP COMMENT OUT    boost::assign::map_list_of
-        // TEMP COMMENT OUT      ( 0, uint256S("0x7cdee06b50f675d674a480eed723936a88d7e723a4f0a28cb38674a4135617ba"))
-        // TEMP COMMENT OUT};
+        checkpointData = (CCheckpointData){
+            boost::assign::map_list_of
+              ( 0, uint256S("0x1806ba27664a228ad562bf5791e63957ef4843cabdbfd71ae983b835931a0361"))
+        };
 
         checkpointData = (CCheckpointData) { { {}, }};
 
         chainTxData = ChainTxData{
-            1576893577,
-            1,
+            1577415801,
+            0,
             1
         };
 
