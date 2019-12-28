@@ -64,8 +64,8 @@ void CSporkManager::Clear()
 void CSporkManager::CheckAndRemove()
 {
     LOCK(cs);
-    bool fSporkAddressIsSet = !setSporkPubKeyIDs.empty();
-    assert(fSporkAddressIsSet);
+//    bool fSporkAddressIsSet = !setSporkPubKeyIDs.empty();
+//    assert(fSporkAddressIsSet);
 
     auto itActive = mapSporksActive.begin();
     while (itActive != mapSporksActive.end()) {
