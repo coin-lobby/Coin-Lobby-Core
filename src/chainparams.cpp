@@ -304,7 +304,7 @@ public:
         // CNL script addresses start with '7'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,16);
         // CNL private keys start with '7' or 'X'
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,204);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,28);
         // CNL BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         // CNL BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
@@ -333,7 +333,7 @@ public:
         nPoolMaxParticipants = 5;
         nFulfilledRequestExpireTime = 60*60; // fulfilled requests expire in 1 hour
 
-        vSporkAddresses = {"PR8VqUyRm1Dm9tii6uv9D7gidWyA56SvqZ"}; /* burnt swap dummy */
+        vSporkAddresses = {"CfNoeU1ACvoCafmzL1htjEUW7DGwxBsLsb"}; /* burnt swap dummy */
         nMinSporkKeys = 1;
         fBIP9CheckMasternodesUpgraded = true;
 
@@ -491,7 +491,7 @@ public:
         nPoolMaxParticipants = 5;
         nFulfilledRequestExpireTime = 5*60; // fulfilled requests expire in 5 minutes
 
-        vSporkAddresses = {"yjPtiKh2uwk3bDutTEA2q9mCtXyiZRWn55"};
+        vSporkAddresses = {"EUD1fjwac6StF8PtdeN1Ccr45eajp9f5ccjRBqhpLTyLE1vtC"};
         nMinSporkKeys = 1;
         fBIP9CheckMasternodesUpgraded = true;
 

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>769</width>
-    <height>485</height>
+    <height>571</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>4</number>
      </property>
      <widget class="QWidget" name="tab_info">
       <attribute name="title">
@@ -42,8 +42,17 @@
        </item>
        <item row="1" column="0">
         <widget class="QLabel" name="label_6">
+         <property name="maximumSize">
+          <size>
+           <width>128</width>
+           <height>128</height>
+          </size>
+         </property>
          <property name="text">
-          <string>Client version</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/icons/light/about&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
@@ -165,17 +174,17 @@
         </widget>
        </item>
        <item row="6" column="0">
-           <widget class="QLabel" name="labelNetwork">
-               <property name="font">
-                   <font>
-                       <weight>75</weight>
-                       <bold>true</bold>
-                   </font>
-               </property>
-               <property name="text">
-                   <string>Network</string>
-               </property>
-           </widget>
+        <widget class="QLabel" name="labelNetwork">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Network</string>
+         </property>
+        </widget>
        </item>
        <item row="7" column="0">
         <widget class="QLabel" name="label_8">
@@ -226,7 +235,7 @@
        <item row="9" column="0">
         <widget class="QLabel" name="masternodeCountLabel">
          <property name="text">
-          <string>Number of Masternodes</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Masternode Count&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
@@ -441,6 +450,16 @@
           <number>4</number>
          </property>
          <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/icons/light/coin-lobby_console&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
           <spacer name="horizontalSpacer">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
@@ -461,14 +480,14 @@
              <height>24</height>
             </size>
            </property>
-           <property name="text">
-            <string/>
-           </property>
            <property name="toolTip">
             <string>Decrease font size</string>
            </property>
+           <property name="text">
+            <string/>
+           </property>
            <property name="icon">
-            <iconset resource="../bitcoin.qrc">
+            <iconset>
              <normaloff>:/icons/fontsmaller</normaloff>:/icons/fontsmaller</iconset>
            </property>
            <property name="iconSize">
@@ -500,7 +519,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="../bitcoin.qrc">
+            <iconset>
              <normaloff>:/icons/fontbigger</normaloff>:/icons/fontbigger</iconset>
            </property>
            <property name="iconSize">
@@ -535,7 +554,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="../bitcoin.qrc">
+            <iconset>
              <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
            </property>
            <property name="shortcut">
@@ -1454,7 +1473,7 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>100</y>
+         <y>180</y>
          <width>301</width>
          <height>23</height>
         </rect>
@@ -1473,7 +1492,7 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>150</y>
+         <y>230</y>
          <width>301</width>
          <height>23</height>
         </rect>
@@ -1492,7 +1511,7 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>200</y>
+         <y>280</y>
          <width>301</width>
          <height>23</height>
         </rect>
@@ -1511,7 +1530,7 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>250</y>
+         <y>330</y>
          <width>301</width>
          <height>23</height>
         </rect>
@@ -1530,7 +1549,7 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>300</y>
+         <y>380</y>
          <width>301</width>
          <height>23</height>
         </rect>
@@ -1549,7 +1568,7 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>30</y>
+         <y>110</y>
          <width>711</width>
          <height>41</height>
         </rect>
@@ -1571,7 +1590,7 @@
        <property name="geometry">
         <rect>
          <x>330</x>
-         <y>90</y>
+         <y>170</y>
          <width>411</width>
          <height>41</height>
         </rect>
@@ -1587,7 +1606,7 @@
        <property name="geometry">
         <rect>
          <x>330</x>
-         <y>140</y>
+         <y>220</y>
          <width>411</width>
          <height>41</height>
         </rect>
@@ -1603,7 +1622,7 @@
        <property name="geometry">
         <rect>
          <x>330</x>
-         <y>190</y>
+         <y>270</y>
          <width>411</width>
          <height>41</height>
         </rect>
@@ -1619,7 +1638,7 @@
        <property name="geometry">
         <rect>
          <x>330</x>
-         <y>240</y>
+         <y>320</y>
          <width>411</width>
          <height>41</height>
         </rect>
@@ -1635,7 +1654,7 @@
        <property name="geometry">
         <rect>
          <x>330</x>
-         <y>290</y>
+         <y>370</y>
          <width>411</width>
          <height>41</height>
         </rect>
@@ -1650,10 +1669,10 @@
       <widget class="QLabel" name="label_repair_header">
        <property name="geometry">
         <rect>
-         <x>10</x>
-         <y>10</y>
-         <width>711</width>
-         <height>16</height>
+         <x>20</x>
+         <y>20</y>
+         <width>638</width>
+         <height>74</height>
         </rect>
        </property>
        <property name="font">
@@ -1664,7 +1683,7 @@
         </font>
        </property>
        <property name="text">
-        <string>Wallet repair options.</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/icons/light/coin-lobby_repair&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
@@ -1674,7 +1693,7 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>350</y>
+         <y>430</y>
          <width>301</width>
          <height>23</height>
         </rect>
@@ -1687,7 +1706,7 @@
        <property name="geometry">
         <rect>
          <x>330</x>
-         <y>340</y>
+         <y>420</y>
          <width>411</width>
          <height>41</height>
         </rect>
@@ -1703,7 +1722,7 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>70</y>
+         <y>150</y>
          <width>731</width>
          <height>21</height>
         </rect>
