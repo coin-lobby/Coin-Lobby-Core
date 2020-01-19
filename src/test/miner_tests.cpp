@@ -170,7 +170,7 @@ void TestPackageSelection(const CChainParams& chainparams, CScript scriptPubKey,
 BOOST_AUTO_TEST_CASE(CreateNewBlock_validity)
 {
     const CChainParams& chainparams = Params(CBaseChainParams::MAIN);
-    CScript scriptPubKey = CScript() << ParseHex("049dc7bb90c46f433332e45baad044b4732d52ceb7995c32ae740772a892989fb42a6d65150b399747bedf26d32d8b743f1ebb8a63d0b608618f1746131255c130") << OP_CHECKSIG;
+    CScript scriptPubKey = CScript() << ParseHex("04a33fc3a6054c2307c11fc024022da3e30a825a62a4ff7cd3147ec879ab580fe09ec6a0faad5a6f84c3167a92f1950218915f3a013ee212e228ecbc73c6880038") << OP_CHECKSIG;
     std::unique_ptr<CBlockTemplate> pblocktemplate, pemptyblocktemplate;
     CMutableTransaction tx,tx2;
     CScript script;
