@@ -333,7 +333,7 @@ public:
         nPoolMaxParticipants = 5;
         nFulfilledRequestExpireTime = 60*60; // fulfilled requests expire in 1 hour
 
-        vSporkAddresses = {"CfNoeU1ACvoCafmzL1htjEUW7DGwxBsLsb"}; /* burnt swap dummy */
+        vSporkAddresses = {"CfNoeU1ACvoCafmzL1htjEUW7DGwxBsLsb"};
         nMinSporkKeys = 1;
         fBIP9CheckMasternodesUpgraded = true;
 
@@ -460,7 +460,7 @@ public:
 
 
         // Testnet CNL addresses start with 'c'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,88);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,28);
         // Testnet CNL script addresses start with '8' or '9'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,19);
         // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
@@ -491,7 +491,7 @@ public:
         nPoolMaxParticipants = 5;
         nFulfilledRequestExpireTime = 5*60; // fulfilled requests expire in 5 minutes
 
-        vSporkAddresses = {"EUD1fjwac6StF8PtdeN1Ccr45eajp9f5ccjRBqhpLTyLE1vtC"};
+        vSporkAddresses = {"CfNoeU1ACvoCafmzL1htjEUW7DGwxBsLsb"};
         nMinSporkKeys = 1;
         fBIP9CheckMasternodesUpgraded = true;
 
