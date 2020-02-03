@@ -297,7 +297,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x44186b24a73dbfef8e0a7aae9678ff586d05dbb28897809e12f6a0a1ebc9c7d3"));
 
 
-        // TEMP COMMENT OUT vSeeds.push_back(CDNSSeedData("seed1.0313370.xyz", "seed2.0313370.xyz"));
+        vSeeds.push_back(CDNSSeedData("149.248.39.44", "149.28.241.143"));
 
         // CNL addresses start with 'C'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,28);
@@ -313,7 +313,7 @@ public:
         // CNL BIP44 coin type is '4242'
         nExtCoinType = 4242;
 
-        // TEMP COMMENT OUT vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
+        vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
         // long living quorum params
         consensus.llmqs[Consensus::LLMQ_50_60] = llmq50_60;
@@ -340,13 +340,15 @@ public:
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
             (     0, uint256S("0x000007b7ee4df1e2005925ebf91a746942b61cb9a17f11a8e1c52eaccb4103ad"))
+            (     627, uint256S("0x0000000000767ba9d4578190a0f66db14f944657d30c7c8969c91e9cbb19f679"))
+            (     953, uint256S("0x0000000000bb7b94dcd4832dd53eaba45c9f058758967b9dc27f07249c344c60"))
         };
 
         checkpointData = (CCheckpointData) { { {}, }};
 
         chainTxData = ChainTxData{
-            1577414308, // * UNIX timestamp of last known number of transactions
-            0,    // * total number of transactions between genesis and that timestamp
+            1580449932, // * UNIX timestamp of last known number of transactions
+            1074,    // * total number of transactions between genesis and that timestamp
                         //   (the tx=... number in the SetBestChain debug.log lines)
             1         // * estimated number of transactions per second after that timestamp
         };
