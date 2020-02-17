@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/coin-lobby/coinlobby-detached-sigs.git"
+- "url": "https://github.com/coinlobby/coinlobby-detached-sigs.git"
   "dir": "signature"
 files:
 - "coinlobbycore-osx-unsigned.tar.gz"

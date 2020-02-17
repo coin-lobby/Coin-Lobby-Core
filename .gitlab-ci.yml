@@ -73,7 +73,7 @@ stages:
     - echo "Commit log:" && git log --format=fuller -1
 
     # Build coinlobby_hash
-    - git clone https://github.com/coin-lobby/coinlobby_hash
+    - git clone https://github.com/coinlobby/coinlobby_hash
     - cd coinlobby_hash && python3 setup.py install
 
     # Install build target specific packages

@@ -4,7 +4,7 @@ run using Python 3 but are compatible with Python 2.
 
 ## Step 0: Install coinlobby_hash
 
-https://github.com/coin-lobby/coinlobby_hash
+https://github.com/coinlobby/coinlobby_hash
 
 ## Step 1: Download hash list
 
