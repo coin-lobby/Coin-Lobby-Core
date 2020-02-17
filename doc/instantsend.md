@@ -12,8 +12,8 @@ When a "Transaction Lock" occurs the hash of the related transaction is broadcas
 * `zmqpubhashtxlock`: publishes the transaction hash when locked via InstantSend
 
 This mechanism has been integrated into Bitcore-Node-CoinLobby which allows for notification to be broadcast through Insight API in one of two ways:
-* WebSocket: [https://github.com/coin-lobby/insight-api-coinlobby#web-socket-api](https://github.com/coin-lobby/insight-api-coinlobby#web-socket-api)
-* API: [https://github.com/coin-lobby/insight-api-coinlobby#instantsend-transactions](https://github.com/coin-lobby/insight-api-coinlobby#instantsend-transactions)
+* WebSocket: [https://github.com/coinlobby/insight-api-coinlobby#web-socket-api](https://github.com/coinlobby/insight-api-coinlobby#web-socket-api)
+* API: [https://github.com/coinlobby/insight-api-coinlobby#instantsend-transactions](https://github.com/coinlobby/insight-api-coinlobby#instantsend-transactions)
 
 #### Command line option
 
