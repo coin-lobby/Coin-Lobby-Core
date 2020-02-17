@@ -24,7 +24,7 @@ Drag CoinLobby-Qt to your applications folder, and then run CoinLobby-Qt.
 
 ### Need Help?
 
-* See the [CoinLobby documentation](https://github.com/CoinLobby/coinlobby/wiki)
+* See the [CoinLobby documentation](https://github.com/coin-lobby/coinlobby/wiki)
 for help and more information.
 * Ask for help on [Discord](https://discordapp.com/invite/RKE5PD9) on Support channel.
 

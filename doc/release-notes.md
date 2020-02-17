@@ -3,13 +3,13 @@ CoinLobby Core version 1.4.0.1
 
 Release is now available from:
 
-  <https://github.com/CoinLobby/coinlobby/releases>
+  <https://github.com/coin-lobby/coinlobby/releases>
 
 This is a new major version release, bringing new features, various bugfixes and other improvements.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/coinlobby/coinlobby/issues>
+  <https://github.com/coin-lobby/coinlobby/issues>
 
 
 Upgrading and downgrading

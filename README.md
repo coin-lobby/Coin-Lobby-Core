@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/CoinLobby/media/raw/master/coinlobby-logo256.png"/></p>
+<p align="center"><img src="https://github.com/coin-lobby/media/raw/master/coinlobby-logo256.png"/></p>
 
 `M`: [![Build Status](https://travis-ci.org/CoinLobby/coinlobby.svg?branch=master)](https://travis-ci.org/CoinLobby/coinlobby)
 
