@@ -27,8 +27,8 @@ Build-Depends: debhelper,
  libzmq3-dev
 Standards-Version: 3.9.2
 Homepage: https://coinlobby.com/
-Vcs-Git: git://github.com/coinlobby/coinlobby.git
-Vcs-Browser: https://github.com/coinlobby/coinlobby
+Vcs-Git: git://github.com/coin-lobby/coinlobby.git
+Vcs-Browser: https://github.com/coin-lobby/coinlobby
 
 Package: coinlobbyd
 Architecture: any
