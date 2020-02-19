@@ -141,7 +141,7 @@ script: |
   chmod +x ${WRAP_DIR}/${prog}
   touch -d "${REFERENCE_DATETIME}" ${WRAP_DIR}/${prog}
   done
-
+  chmod -R 777 coinlobby
   cd coinlobby
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host

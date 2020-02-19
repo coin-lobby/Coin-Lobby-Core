@@ -101,7 +101,7 @@ script: |
   create_global_faketime_wrappers "2000-01-01 12:00:00"
   create_per-host_faketime_wrappers "2000-01-01 12:00:00"
   export PATH=${WRAP_DIR}:${PATH}
-
+  chmod -R 777 coinlobby
   cd coinlobby
   BASEPREFIX=`pwd`/depends
 
