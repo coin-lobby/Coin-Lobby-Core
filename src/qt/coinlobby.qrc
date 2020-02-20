@@ -171,10 +171,6 @@
         <file alias="fontsmaller">res/icons/light/fontsmaller.png</file>
         <file alias="transaction_abandoned">res/icons/light/transaction_abandoned.png</file>
         <file alias="network_disabled">res/icons/light/network_disabled.png</file>
-        <file alias="coin-lobby_console">res/images/light/horiz_console.png</file>
-        <file alias="coin-lobby_options">res/images/light/horiz_options.png</file>
-        <file alias="coin-lobby_repair">res/images/light/horiz_walletrepairoptions.png</file>
-        <file alias="coin-lobby_logo">res/images/light/cl_logo_full.png</file>
     </qresource>
     <qresource prefix="/icons/light-retro">
         <file alias="address-book">res/icons/light-retro/address-book.png</file>
@@ -341,6 +337,10 @@
         <file alias="drkblue_walletFrame_bg">res/images/light/drkblue_walletFrame_bg.png</file>
         <file alias="splash">res/images/light/splash.png</file>
         <file alias="splash_testnet">res/images/light/splash_testnet.png</file>
+        <file alias="coin-lobby_console">res/images/light/horiz_console.png</file>
+        <file alias="coin-lobby_options">res/images/light/horiz_options.png</file>
+        <file alias="coin-lobby_repair">res/images/light/horiz_walletrepairoptions.png</file>
+        <file alias="coin-lobby_logo">res/images/light/cl_logo_full.png</file>
     </qresource>
     <qresource prefix="/images/light-retro">
         <file alias="about">res/images/light-retro/about.png</file>
