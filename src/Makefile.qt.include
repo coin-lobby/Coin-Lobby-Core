@@ -307,6 +307,11 @@ RES_ICONS = \
   qt/res/icons/light/connect2.png \
   qt/res/icons/light/connect3.png \
   qt/res/icons/light/connect4.png \
+  qt/res/icons/light/connect0_16.png \
+  qt/res/icons/light/connect1_16.png \
+  qt/res/icons/light/connect2_16.png \
+  qt/res/icons/light/connect3_16.png \
+  qt/res/icons/light/connect4_16.png \
   qt/res/icons/light/debugwindow.png \
   qt/res/icons/light/drkblue_editpaste.png \
   qt/res/icons/light/drkblue_address-book.png \
