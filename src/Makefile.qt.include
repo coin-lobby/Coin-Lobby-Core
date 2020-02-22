@@ -558,6 +558,7 @@ RES_IMAGES = \
   qt/res/images/light/horiz_options.png \
   qt/res/images/light/horiz_walletrepairoptions.png \
   qt/res/images/light/cl_logo_full.png \
+  qt/res/images/light/about_qt.png \
   qt/res/images/light/drkblue_downArrow.png \
   qt/res/images/light/drkblue_downArrow_small.png \
   qt/res/images/light/drkblue_upArrow_small.png \

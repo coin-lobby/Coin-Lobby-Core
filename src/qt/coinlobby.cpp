@@ -563,9 +563,7 @@ WId BitcoinApplication::getMainWinId() const
 #ifndef BITCOIN_QT_TEST
 int main(int argc, char *argv[])
 {
-    Q_INIT_RESOURCE(coinlobby);
-    Q_INIT_RESOURCE(coinlobby_locale);
-    
+
     RegisterPrettyTerminateHander();
     RegisterPrettySignalHandlers();
 
@@ -602,7 +600,8 @@ int main(int argc, char *argv[])
     sslconf.setProtocol(QSsl::TlsV1_0OrLater);
     QSslConfiguration::setDefaultConfiguration(sslconf);
 #endif
-
+    Q_INIT_RESOURCE(coinlobby);
+    Q_INIT_RESOURCE(coinlobby_locale);
     // Register meta types used for QMetaObject::invokeMethod
     qRegisterMetaType< bool* >();
     //   Need to pass name here as CAmount is a typedef (see http://qt-project.org/doc/qt-5/qmetatype.html#qRegisterMetaType)
