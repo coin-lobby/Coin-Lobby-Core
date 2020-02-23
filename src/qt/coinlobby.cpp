@@ -581,7 +581,8 @@ int main(int argc, char *argv[])
     QTextCodec::setCodecForTr(QTextCodec::codecForName("UTF-8"));
     QTextCodec::setCodecForCStrings(QTextCodec::codecForTr());
 #endif
-
+    Q_INIT_RESOURCE(coinlobby);
+    Q_INIT_RESOURCE(coinlobby_locale);
     BitcoinApplication app(argc, argv);
 #if QT_VERSION > 0x050100
     // Generate high-dpi pixmaps
@@ -600,8 +601,7 @@ int main(int argc, char *argv[])
     sslconf.setProtocol(QSsl::TlsV1_0OrLater);
     QSslConfiguration::setDefaultConfiguration(sslconf);
 #endif
-    Q_INIT_RESOURCE(coinlobby);
-    Q_INIT_RESOURCE(coinlobby_locale);
+
     // Register meta types used for QMetaObject::invokeMethod
     qRegisterMetaType< bool* >();
     //   Need to pass name here as CAmount is a typedef (see http://qt-project.org/doc/qt-5/qmetatype.html#qRegisterMetaType)
