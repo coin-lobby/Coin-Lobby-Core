@@ -235,7 +235,7 @@
        <item row="9" column="0">
         <widget class="QLabel" name="masternodeCountLabel">
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Masternode Count&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>Masternode Count</string>
          </property>
         </widget>
        </item>
