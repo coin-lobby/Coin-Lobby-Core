@@ -59,6 +59,10 @@
         <file alias="fontsmaller">res/icons/drkblue/fontsmaller.png</file>
         <file alias="transaction_abandoned">res/icons/drkblue/transaction_abandoned.png</file>
         <file alias="network_disabled">res/icons/drkblue/network_disabled.png</file>
+        <file alias="backup">res/icons/drkblue/backup.png</file>
+        <file alias="configure2">res/icons/drkblue/configure2.png</file>
+        <file alias="peers">res/icons/drkblue/peers.png</file>
+        <file alias="console">res/icons/drkblue/console.png</file>
     </qresource>
     <qresource prefix="/icons/crownium">
         <file alias="address-book">res/icons/crownium/address-book.png</file>
@@ -115,6 +119,10 @@
         <file alias="fontsmaller">res/icons/crownium/fontsmaller.png</file>
         <file alias="transaction_abandoned">res/icons/crownium/transaction_abandoned.png</file>
         <file alias="network_disabled">res/icons/crownium/network_disabled.png</file>
+        <file alias="backup">res/icons/crownium/backup.png</file>
+        <file alias="configure2">res/crownium/light/configure2.png</file>
+        <file alias="peers">res/icons/crownium/peers.png</file>
+        <file alias="console">res/icons/crownium/console.png</file>
     </qresource>
     <qresource prefix="/icons/light">
         <file alias="address-book">res/icons/light/address-book.png</file>
@@ -125,8 +133,8 @@
         <file alias="connect_2">res/icons/light/connect2_16.png</file>
         <file alias="connect_3">res/icons/light/connect3_16.png</file>
         <file alias="connect_4">res/icons/light/connect4_16.png</file>
-        <file alias="transaction_0">res/icons/light/transaction0.png</file>
-        <file alias="transaction_confirmed">res/icons/light/transaction2.png</file>
+        <file alias="transaction_0">res/icons/light/coinmix.png</file>
+        <file alias="transaction_confirmed">res/icons/light/clock5.png</file>
         <file alias="transaction_conflicted">res/icons/light/transaction_conflicted.png</file>
         <file alias="transaction_1">res/icons/light/clock1.png</file>
         <file alias="transaction_2">res/icons/light/clock2.png</file>
@@ -160,10 +168,9 @@
         <file alias="drkblue_editpaste">res/icons/light/drkblue_editpaste.png</file>
         <file alias="drkblue_address-book">res/icons/light/drkblue_address-book.png</file>
         <file alias="drkblue_editcopy">res/icons/light/drkblue_editcopy.png</file>
-        <file alias="drkblue_remove">res/icons/light/drkblue_remove.png</file>
+        <file alias="drkblue_remove">res/icons/light/quit.png</file>
         <file alias="browse">res/icons/light/browse.png</file>
         <file alias="about">res/icons/light/about.png</file>
-        <file alias="about_qt">res/icons/light/about_qt.png</file>
         <file alias="verify">res/icons/light/verify.png</file>
         <file alias="hd_enabled">res/icons/light/hd_enabled.png</file>
         <file alias="hd_disabled">res/icons/light/hd_disabled.png</file>
@@ -171,6 +178,10 @@
         <file alias="fontsmaller">res/icons/light/fontsmaller.png</file>
         <file alias="transaction_abandoned">res/icons/light/transaction_abandoned.png</file>
         <file alias="network_disabled">res/icons/light/network_disabled.png</file>
+        <file alias="backup">res/icons/light/backup.png</file>
+        <file alias="configure2">res/icons/light/configure2.png</file>
+        <file alias="peers">res/icons/light/peers.png</file>
+        <file alias="console">res/icons/light/console.png</file>
     </qresource>
     <qresource prefix="/icons/light-retro">
         <file alias="address-book">res/icons/light-retro/address-book.png</file>
@@ -227,6 +238,10 @@
         <file alias="fontsmaller">res/icons/light-retro/fontsmaller.png</file>
         <file alias="transaction_abandoned">res/icons/light-retro/transaction_abandoned.png</file>
         <file alias="network_disabled">res/icons/light-retro/network_disabled.png</file>
+        <file alias="backup">res/icons/light-retro/backup.png</file>
+        <file alias="configure2">res/icons/light-retro/configure2.png</file>
+        <file alias="peers">res/icons/light-retro/peers.png</file>
+        <file alias="console">res/icons/light-retro/console.png</file>
     </qresource>
     <qresource prefix="/icons/trad">
         <file alias="address-book">res/icons/trad/address-book.png</file>
@@ -283,6 +298,10 @@
         <file alias="fontsmaller">res/icons/trad/fontsmaller.png</file>
         <file alias="transaction_abandoned">res/icons/trad/transaction_abandoned.png</file>
         <file alias="network_disabled">res/icons/trad/network_disabled.png</file>
+        <file alias="backup">res/icons/trad/backup.png</file>
+        <file alias="configure2">res/icons/trad/configure2.png</file>
+        <file alias="peers">res/icons/trad/peers.png</file>
+        <file alias="console">res/icons/trad/console.png</file>
     </qresource>
     <qresource prefix="/css">
         <file alias="drkblue">res/css/drkblue.css</file>
@@ -307,6 +326,11 @@
         <file alias="drkblue_walletFrame_bg">res/images/drkblue/drkblue_walletFrame_bg.png</file>
         <file alias="splash">res/images/drkblue/splash.png</file>
         <file alias="splash_testnet">res/images/drkblue/splash_testnet.png</file>
+        <file alias="coin-lobby_console">res/images/drkblue/horiz_console.png</file>
+        <file alias="coin-lobby_options">res/images/drkblue/horiz_options.png</file>
+        <file alias="coin-lobby_repair">res/images/drkblue/horiz_walletrepairoptions.png</file>
+        <file alias="coin-lobby_logo">res/images/drkblue/cl_logo_full.png</file>
+        <file alias="about_qt">res/images/drkblue/about_qt.png</file>
     </qresource>
     <qresource prefix="/images/crownium">
         <file alias="about">res/images/crownium/about.png</file>
@@ -322,6 +346,11 @@
         <file alias="drkblue_walletFrame_bg">res/images/crownium/drkblue_walletFrame_bg.png</file>
         <file alias="splash">res/images/crownium/splash.png</file>
         <file alias="splash_testnet">res/images/crownium/splash_testnet.png</file>
+        <file alias="coin-lobby_console">res/images/crownium/horiz_console.png</file>
+        <file alias="coin-lobby_options">res/images/crownium/horiz_options.png</file>
+        <file alias="coin-lobby_repair">res/images/crownium/horiz_walletrepairoptions.png</file>
+        <file alias="coin-lobby_logo">res/images/crownium/cl_logo_full.png</file>
+        <file alias="about_qt">res/images/crownium/about_qt.png</file>
     </qresource>
     <qresource prefix="/images/light">
         <file alias="about">res/images/light/about.png</file>
@@ -337,6 +366,11 @@
         <file alias="drkblue_walletFrame_bg">res/images/light/drkblue_walletFrame_bg.png</file>
         <file alias="splash">res/images/light/splash.png</file>
         <file alias="splash_testnet">res/images/light/splash_testnet.png</file>
+        <file alias="coin-lobby_console">res/images/light/horiz_console.png</file>
+        <file alias="coin-lobby_options">res/images/light/horiz_options.png</file>
+        <file alias="coin-lobby_repair">res/images/light/horiz_walletrepairoptions.png</file>
+        <file alias="coin-lobby_logo">res/images/light/cl_logo_full.png</file>
+        <file alias="about_qt">res/images/light/about_qt.png</file>
     </qresource>
     <qresource prefix="/images/light-retro">
         <file alias="about">res/images/light-retro/about.png</file>
@@ -352,6 +386,11 @@
         <file alias="drkblue_walletFrame_bg">res/images/light-retro/drkblue_walletFrame_bg.png</file>
         <file alias="splash">res/images/light-retro/splash.png</file>
         <file alias="splash_testnet">res/images/light-retro/splash_testnet.png</file>
+        <file alias="coin-lobby_console">res/images/light-retro/horiz_console.png</file>
+        <file alias="coin-lobby_options">res/images/light-retro/horiz_options.png</file>
+        <file alias="coin-lobby_repair">res/images/light-retro/horiz_walletrepairoptions.png</file>
+        <file alias="coin-lobby_logo">res/images/light-retro/cl_logo_full.png</file>
+        <file alias="about_qt">res/images/light-retro/about_qt.png</file>
     </qresource>
     <qresource prefix="/images/trad">
         <file alias="about">res/images/trad/about.png</file>
@@ -365,6 +404,11 @@
         <file alias="drkblue_walletFrame_bg">res/images/trad/drkblue_walletFrame_bg.png</file>
         <file alias="splash">res/images/trad/splash.png</file>
         <file alias="splash_testnet">res/images/trad/splash_testnet.png</file>
+        <file alias="coin-lobby_console">res/images/trad/horiz_console.png</file>
+        <file alias="coin-lobby_options">res/images/trad/horiz_options.png</file>
+        <file alias="coin-lobby_repair">res/images/trad/horiz_walletrepairoptions.png</file>
+        <file alias="coin-lobby_logo">res/images/trad/cl_logo_full.png</file>
+        <file alias="about_qt">res/images/trad/about_qt.png</file>
     </qresource>
     <qresource prefix="/movies">
         <file alias="spinner-000">res/movies/spinner-000.png</file>
