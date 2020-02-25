@@ -133,8 +133,8 @@
         <file alias="connect_2">res/icons/light/connect2_16.png</file>
         <file alias="connect_3">res/icons/light/connect3_16.png</file>
         <file alias="connect_4">res/icons/light/connect4_16.png</file>
-        <file alias="transaction_0">res/icons/light/coinmix.png</file>
-        <file alias="transaction_confirmed">res/icons/light/clock5.png</file>
+        <file alias="transaction_0">res/icons/light/transaction0.png</file>
+        <file alias="transaction_confirmed">res/icons/light/transaction2.png</file>
         <file alias="transaction_conflicted">res/icons/light/transaction_conflicted.png</file>
         <file alias="transaction_1">res/icons/light/clock1.png</file>
         <file alias="transaction_2">res/icons/light/clock2.png</file>
@@ -168,9 +168,10 @@
         <file alias="drkblue_editpaste">res/icons/light/drkblue_editpaste.png</file>
         <file alias="drkblue_address-book">res/icons/light/drkblue_address-book.png</file>
         <file alias="drkblue_editcopy">res/icons/light/drkblue_editcopy.png</file>
-        <file alias="drkblue_remove">res/icons/light/quit.png</file>
+        <file alias="drkblue_remove">res/icons/light/drkblue_remove.png</file>
         <file alias="browse">res/icons/light/browse.png</file>
         <file alias="about">res/icons/light/about.png</file>
+        <file alias="about_qt">res/icons/light/about_qt.png</file>
         <file alias="verify">res/icons/light/verify.png</file>
         <file alias="hd_enabled">res/icons/light/hd_enabled.png</file>
         <file alias="hd_disabled">res/icons/light/hd_disabled.png</file>

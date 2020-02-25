@@ -31,7 +31,7 @@ ReceiveCoinsDialog::ReceiveCoinsDialog(const PlatformStyle *_platformStyle, QWid
 {
     ui->setupUi(this);
     QString theme = GUIUtil::getThemeName();
-    
+
     if (!_platformStyle->getImagesOnButtons()) {
         ui->clearButton->setIcon(QIcon());
         ui->receiveButton->setIcon(QIcon());
@@ -40,7 +40,7 @@ ReceiveCoinsDialog::ReceiveCoinsDialog(const PlatformStyle *_platformStyle, QWid
     } else {
         ui->clearButton->setIcon(QIcon(":/icons/" + theme + "/remove"));
         ui->receiveButton->setIcon(QIcon(":/icons/" + theme + "/receiving_addresses"));
-        ui->showRequestButton->setIcon(QIcon(":/icons/" + theme + "/edit"));
+        ui->showRequestButton->setIcon(QIcon(":/icons/" + theme + "/browse"));
         ui->removeRequestButton->setIcon(QIcon(":/icons/" + theme + "/remove"));
     }
 
