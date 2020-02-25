@@ -52,7 +52,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "CoinLobby"
-#define QAPP_ORG_DOMAIN "coinlobby.org"
+#define QAPP_ORG_DOMAIN "coin-lobby.info"
 #define QAPP_APP_NAME_DEFAULT "CoinLobby-Qt"
 #define QAPP_APP_NAME_TESTNET "CoinLobby-Qt-testnet"
 #define QAPP_APP_NAME_DEVNET "CoinLobby-Qt-%s"
