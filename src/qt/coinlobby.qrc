@@ -51,7 +51,6 @@
         <file alias="drkblue_remove">res/icons/drkblue/drkblue_remove.png</file>
         <file alias="browse">res/icons/drkblue/browse.png</file>
         <file alias="about">res/icons/drkblue/about.png</file>
-        <file alias="about_qt">res/icons/drkblue/about_qt.png</file>
         <file alias="verify">res/icons/drkblue/verify.png</file>
         <file alias="hd_enabled">res/icons/drkblue/hd_enabled.png</file>
         <file alias="hd_disabled">res/icons/drkblue/hd_disabled.png</file>
@@ -64,7 +63,7 @@
         <file alias="configure2">res/icons/drkblue/configure2.png</file>
         <file alias="peers">res/icons/drkblue/peers.png</file>
         <file alias="console">res/icons/drkblue/console.png</file>
-	      <file alias="about_qt">res/icons/drkblue/about_qt.png</file>
+	<file alias="about_qt">res/icons/drkblue/about_qt.png</file>
         <file alias="configure">res/icons/drkblue/configure.png</file>
     </qresource>
     <qresource prefix="/icons/crownium">
@@ -114,7 +113,6 @@
         <file alias="drkblue_remove">res/icons/crownium/drkblue_remove.png</file>
         <file alias="browse">res/icons/crownium/browse.png</file>
         <file alias="about">res/icons/crownium/about.png</file>
-        <file alias="about_qt">res/icons/crownium/about_qt.png</file>
         <file alias="verify">res/icons/crownium/verify.png</file>
         <file alias="hd_enabled">res/icons/crownium/hd_enabled.png</file>
         <file alias="hd_disabled">res/icons/crownium/hd_disabled.png</file>
@@ -124,10 +122,10 @@
         <file alias="network_disabled">res/icons/crownium/network_disabled.png</file>
 
         <file alias="backup">res/icons/crownium/backup.png</file>
-        <file alias="configure2">res/crownium/light/configure2.png</file>
+        <file alias="configure2">res/icons/crownium/configure2.png</file>
         <file alias="peers">res/icons/crownium/peers.png</file>
         <file alias="console">res/icons/crownium/console.png</file>
-	      <file alias="about_qt">res/icons/crownium/about_qt.png</file>
+	<file alias="about_qt">res/icons/crownium/about_qt.png</file>
         <file alias="configure">res/icons/crownium/configure.png</file>
     </qresource>
     <qresource prefix="/icons/light">
@@ -185,11 +183,11 @@
         <file alias="transaction_abandoned">res/icons/light/transaction_abandoned.png</file>
         <file alias="network_disabled">res/icons/light/network_disabled.png</file>
 
-	      <file alias="backup">res/icons/light/backup.png</file>
+	<file alias="backup">res/icons/light/backup.png</file>
         <file alias="configure2">res/icons/light/configure2.png</file>
         <file alias="peers">res/icons/light/peers.png</file>
         <file alias="console">res/icons/light/console.png</file>
-	      <file alias="about_qt">res/icons/light/about_qt.png</file>
+	<file alias="about_qt">res/icons/light/about_qt.png</file>
         <file alias="configure">res/icons/light/configure.png</file>
     </qresource>
     <qresource prefix="/icons/light-retro">
@@ -239,7 +237,6 @@
         <file alias="drkblue_remove">res/icons/light-retro/drkblue_remove.png</file>
         <file alias="browse">res/icons/light-retro/browse.png</file>
         <file alias="about">res/icons/light-retro/about.png</file>
-        <file alias="about_qt">res/icons/light-retro/about_qt.png</file>
         <file alias="verify">res/icons/light-retro/verify.png</file>
         <file alias="hd_enabled">res/icons/light-retro/hd_enabled.png</file>
         <file alias="hd_disabled">res/icons/light-retro/hd_disabled.png</file>
@@ -252,7 +249,7 @@
         <file alias="configure2">res/icons/light-retro/configure2.png</file>
         <file alias="peers">res/icons/light-retro/peers.png</file>
         <file alias="console">res/icons/light-retro/console.png</file>
-	      <file alias="about_qt">res/icons/light-retro/about_qt.png</file>
+	<file alias="about_qt">res/icons/light-retro/about_qt.png</file>
         <file alias="configure">res/icons/light-retro/configure.png</file>
     </qresource>
     <qresource prefix="/icons/trad">
@@ -302,7 +299,6 @@
         <file alias="drkblue_remove">res/icons/trad/drkblue_remove.png</file>
         <file alias="browse">res/icons/trad/browse.png</file>
         <file alias="about">res/icons/trad/about.png</file>
-        <file alias="about_qt">res/icons/trad/about_qt.png</file>
         <file alias="verify">res/icons/trad/verify.png</file>
         <file alias="hd_enabled">res/icons/trad/hd_enabled.png</file>
         <file alias="hd_disabled">res/icons/trad/hd_disabled.png</file>
@@ -315,7 +311,7 @@
         <file alias="configure2">res/icons/trad/configure2.png</file>
         <file alias="peers">res/icons/trad/peers.png</file>
         <file alias="console">res/icons/trad/console.png</file>
-	      <file alias="about_qt">res/icons/trad/about_qt.png</file>
+	<file alias="about_qt">res/icons/trad/about_qt.png</file>
         <file alias="configure">res/icons/trad/configure.png</file>
     </qresource>
     <qresource prefix="/css">
