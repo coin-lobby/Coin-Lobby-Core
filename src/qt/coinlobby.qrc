@@ -59,6 +59,11 @@
         <file alias="fontsmaller">res/icons/drkblue/fontsmaller.png</file>
         <file alias="transaction_abandoned">res/icons/drkblue/transaction_abandoned.png</file>
         <file alias="network_disabled">res/icons/drkblue/network_disabled.png</file>
+
+        <file alias="backup">res/icons/drkblue/backup.png</file>
+        <file alias="configure2">res/icons/drkblue/configure2.png</file>
+        <file alias="peers">res/icons/drkblue/peers.png</file>
+        <file alias="console">res/icons/drkblue/console.png</file>
     </qresource>
     <qresource prefix="/icons/crownium">
         <file alias="address-book">res/icons/crownium/address-book.png</file>
@@ -115,6 +120,11 @@
         <file alias="fontsmaller">res/icons/crownium/fontsmaller.png</file>
         <file alias="transaction_abandoned">res/icons/crownium/transaction_abandoned.png</file>
         <file alias="network_disabled">res/icons/crownium/network_disabled.png</file>
+
+        <file alias="backup">res/icons/crownium/backup.png</file>
+        <file alias="configure2">res/icons/crownium/configure2.png</file>
+        <file alias="peers">res/icons/crownium/peers.png</file>
+        <file alias="console">res/icons/crownium/console.png</file>
     </qresource>
     <qresource prefix="/icons/light">
         <file alias="address-book">res/icons/light/address-book.png</file>
@@ -171,6 +181,11 @@
         <file alias="fontsmaller">res/icons/light/fontsmaller.png</file>
         <file alias="transaction_abandoned">res/icons/light/transaction_abandoned.png</file>
         <file alias="network_disabled">res/icons/light/network_disabled.png</file>
+
+        <file alias="backup">res/icons/light/backup.png</file>
+        <file alias="configure2">res/icons/light/configure2.png</file>
+        <file alias="peers">res/icons/light/peers.png</file>
+        <file alias="console">res/icons/light/console.png</file>
     </qresource>
     <qresource prefix="/icons/light-retro">
         <file alias="address-book">res/icons/light-retro/address-book.png</file>
@@ -227,6 +242,11 @@
         <file alias="fontsmaller">res/icons/light-retro/fontsmaller.png</file>
         <file alias="transaction_abandoned">res/icons/light-retro/transaction_abandoned.png</file>
         <file alias="network_disabled">res/icons/light-retro/network_disabled.png</file>
+
+        <file alias="backup">res/icons/light-retro/backup.png</file>
+        <file alias="configure2">res/icons/light-retro/configure2.png</file>
+        <file alias="peers">res/icons/light-retro/peers.png</file>
+        <file alias="console">res/icons/light-retro/console.png</file>
     </qresource>
     <qresource prefix="/icons/trad">
         <file alias="address-book">res/icons/trad/address-book.png</file>
@@ -283,6 +303,11 @@
         <file alias="fontsmaller">res/icons/trad/fontsmaller.png</file>
         <file alias="transaction_abandoned">res/icons/trad/transaction_abandoned.png</file>
         <file alias="network_disabled">res/icons/trad/network_disabled.png</file>
+
+        <file alias="backup">res/icons/trad/backup.png</file>
+        <file alias="configure2">res/icons/trad/configure2.png</file>
+        <file alias="peers">res/icons/trad/peers.png</file>
+        <file alias="console">res/icons/trad/console.png</file>
     </qresource>
     <qresource prefix="/css">
         <file alias="drkblue">res/css/drkblue.css</file>
