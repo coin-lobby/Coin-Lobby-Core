@@ -239,6 +239,10 @@ RES_ICONS = \
   qt/res/icons/drkblue/fontbigger.png \
   qt/res/icons/drkblue/fontsmaller.png \
   qt/res/icons/drkblue/network_disabled.png \
+  qt/res/icons/drkblue/backup.png \
+  qt/res/icons/drkblue/configure2.png \
+  qt/res/icons/drkblue/peers.png \
+  qt/res/icons/drkblue/console.png \
   qt/res/icons/crownium/add.png \
   qt/res/icons/crownium/address-book.png \
   qt/res/icons/crownium/browse.png \
@@ -293,6 +297,10 @@ RES_ICONS = \
   qt/res/icons/crownium/fontbigger.png \
   qt/res/icons/crownium/fontsmaller.png \
   qt/res/icons/crownium/network_disabled.png \
+  qt/res/icons/crownium/backup.png \
+  qt/res/icons/crownium/configure2.png \
+  qt/res/icons/crownium/peers.png \
+  qt/res/icons/crownium/console.png \
   qt/res/icons/light/add.png \
   qt/res/icons/light/address-book.png \
   qt/res/icons/light/browse.png \
@@ -347,6 +355,10 @@ RES_ICONS = \
   qt/res/icons/light/fontsmaller.png \
   qt/res/icons/light/transaction_abandoned.png \
   qt/res/icons/light/network_disabled.png \
+  qt/res/icons/light/backup.png \
+  qt/res/icons/light/configure2.png \
+  qt/res/icons/light/peers.png \
+  qt/res/icons/light/console.png \
   qt/res/icons/light-retro/add.png \
   qt/res/icons/light-retro/address-book.png \
   qt/res/icons/light-retro/browse.png \
@@ -401,6 +413,10 @@ RES_ICONS = \
   qt/res/icons/light-retro/fontsmaller.png \
   qt/res/icons/light-retro/transaction_abandoned.png \
   qt/res/icons/light-retro/network_disabled.png \
+  qt/res/icons/light-retro/backup.png \
+  qt/res/icons/light-retro/configure2.png \
+  qt/res/icons/light-retro/peers.png \
+  qt/res/icons/light-retro/console.png \
   qt/res/icons/trad/add.png \
   qt/res/icons/trad/address-book.png \
   qt/res/icons/trad/browse.png \
@@ -454,7 +470,11 @@ RES_ICONS = \
   qt/res/icons/trad/verify.png \
   qt/res/icons/trad/fontbigger.png \
   qt/res/icons/trad/fontsmaller.png \
-  qt/res/icons/trad/network_disabled.png
+  qt/res/icons/trad/network_disabled.png \
+  qt/res/icons/trad/backup.png \
+  qt/res/icons/trad/configure2.png \
+  qt/res/icons/trad/peers.png \
+  qt/res/icons/trad/console.png
 
 BITCOIN_QT_BASE_CPP = \
   qt/bantablemodel.cpp \
