@@ -297,7 +297,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x44186b24a73dbfef8e0a7aae9678ff586d05dbb28897809e12f6a0a1ebc9c7d3"));
 
 
-        vSeeds.push_back(CDNSSeedData("149.248.39.44", "149.28.241.143"));
+        vSeeds.push_back(CDNSSeedData("149.248.39.44", "45.32.194.105"));
 
         // CNL addresses start with 'C'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,28);
